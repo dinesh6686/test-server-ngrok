@@ -1,0 +1,17 @@
+{
+  "name": "test-server-ngrok",
+  "version": "1.0.0",
+  "description": "my first server",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Dinesh",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^2.6.1",
+    "express-integrator-extension": "^0.2.3",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0"
+  }
+}
