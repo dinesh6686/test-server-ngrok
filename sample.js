@@ -140,6 +140,30 @@ var expressObj= {
             
             return callback(null,responseData)
 
+        },
+        itemImportPostSubmitHook : function(options,callback){
+            var responseData =[{ 
+                statusCode: 200/422/403,
+                errors: [{code:'', message:''}], 
+                ignored: true/false, 
+                id: '', 
+                _json: {}, 
+                dataURI: '' 
+            }]
+            if(!options.responseData){
+                responseData[0].errors = [{
+                    code:'401',
+                    message:'an error object to signal a fatal exception and will fail the entire page of records!!'
+                }]
+                return callback(null,responseData)
+            }
+            else{
+                responseData[0].statusCode = 200
+                responseData[0].ignored =false
+                responseData[0].errors=[]
+                console.log('After PostSubmit, the response is submitted!!!'+JSON.stringify(responseData));
+                return callback(null,responseData)
+            }
         }
     },
     wrappers :{

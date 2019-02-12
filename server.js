@@ -1,6 +1,6 @@
 var expressExtension = require('express-integrator-extension')
 var serverFunctions = require('./sample')
-var systemToken = 'c4ea21569e0240fd9f80705d85f03ce1'
+var systemToken = 'c421ab97e4ac432fa7ef14f34d2ea653'
 var options = {
     diy : serverFunctions,
     systemToken : systemToken,
