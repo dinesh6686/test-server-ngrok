@@ -1,7 +1,7 @@
 var _=require('lodash')
 var async =require('async')
 var request =require('request')
-var token ='ZGluZXNoLnZlbmthdEBjZWxpZ28uY29tOmRpbmVzaDI2NDk2'
+var token ='*********************************'
 var expressObj= {
     hooks:{
         itemExportPreSavePageHook: function(options,callback){
